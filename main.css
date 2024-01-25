@@ -26,8 +26,8 @@
     margin-bottom: 20px;
 }
 .todo-app h2 img{
-    width: 30px;
-    margin-left: 10px;
+    width: 35px;
+    margin-left: 15px;
 }
 .row{
     display: flex;
@@ -39,7 +39,6 @@
     margin-bottom: 25px;
 }
 input{
-    flex: 1;
     border: none;
     outline: none;
     background: transparent;
@@ -57,7 +56,7 @@ button{
 ul li{
     list-style: none;
     font-size: 17px;
-    padding: 15px 8px 12px 50px;
+    padding: 12px 40px ;
     user-select: none;
     cursor: pointer;
     position: relative;
@@ -80,4 +79,18 @@ ul li.checked{
 }
 ul li.checked::before{
     background-image: url(/images/checked.png);
+}
+ul li span{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    line-height: 30px;
+    color: #555;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
 }
